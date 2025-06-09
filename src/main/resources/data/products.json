@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Smartphone Samsung Galaxy S22",
+    "description": "Smartphone com 128GB, 8GB RAM",
+    "price": 2999.90,
+    "sellerId": 1,
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg"
+    ],
+    "availableStock": 100
+  }
+]

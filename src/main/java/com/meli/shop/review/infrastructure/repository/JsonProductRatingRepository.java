@@ -1,4 +1,4 @@
-package com.meli.shop.review.infrastucture.repository;
+package com.meli.shop.review.infrastructure.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.meli.shop.review.domain.model.ProductRating;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice(basePackages  = "com.meli.shop.seller")
 public class SellerExceptionHandler {
     @ExceptionHandler(SellerNotFoundException.class)
-    public ResponseEntity<String> handleStockUnavailable(SellerNotFoundException ex) {
+    public ResponseEntity<String> handleSellerNotFound(SellerNotFoundException ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
 }

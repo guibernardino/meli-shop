@@ -1,4 +1,4 @@
-package com.meli.shop.bff.presentation.controller.v1;
+package com.meli.shop.bff.presentation.api.v1;
 
 import com.meli.shop.bff.application.service.ProductQueryService;
 import com.meli.shop.bff.application.dto.ProductDetailResponse;

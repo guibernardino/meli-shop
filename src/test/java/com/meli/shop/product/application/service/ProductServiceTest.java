@@ -18,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(MockitoExtension.class)
 class ProductServiceTest {
-
     @Mock
     ProductRepository repository;
 

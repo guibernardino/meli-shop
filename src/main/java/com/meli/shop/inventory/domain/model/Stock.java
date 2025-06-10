@@ -3,11 +3,13 @@ package com.meli.shop.inventory.domain.model;
 import com.meli.shop.inventory.domain.exception.StockInsufficientException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Stock {
     private Long productId;
     private int quantity;

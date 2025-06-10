@@ -12,7 +12,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-
 @Repository
 public class JsonStockRepository implements StockRepository {
 
@@ -20,9 +19,8 @@ public class JsonStockRepository implements StockRepository {
 
     public JsonStockRepository() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-
-        try (InputStream input = new ClassPathResource("data/stock.json").getInputStream()) {
-            Stock[] stocks = mapper.readValue(input, Stock[].class);
+        try (InputStream is = new ClassPathResource("data/stock.json").getInputStream()) {
+            Stock[] stocks = mapper.readValue(is, Stock[].class);
             for (Stock stock : stocks) {
                 stockMap.put(stock.getProductId(), stock);
             }

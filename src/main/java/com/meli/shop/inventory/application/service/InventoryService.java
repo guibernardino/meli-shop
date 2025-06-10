@@ -17,7 +17,7 @@ public class InventoryService {
 
     public StockDTO getStock(Long productId) {
         Stock stock = stockRepository.findByProductId(productId)
-                .orElseThrow(() -> new StockUnavailableException(productId));
+                .orElse(new Stock(productId, 0));
         return StockDTO.from(stock);
     }
 

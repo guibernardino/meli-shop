@@ -36,7 +36,8 @@ class InventoryServiceTest {
     @Test
     void testGetStock_unavailable() {
         Mockito.when(repository.findByProductId(1L)).thenReturn(Optional.empty());
-        assertThrows(StockUnavailableException.class, () -> service.getStock(1L));
+        StockDTO dto = service.getStock(1L);
+        assertEquals(0, dto.quantity());
     }
 
     @Test
